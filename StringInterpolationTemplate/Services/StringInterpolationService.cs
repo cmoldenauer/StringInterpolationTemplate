@@ -28,47 +28,50 @@ public class StringInterpolationService : IStringInterpolationService
 
     public string Number02()
     {
-        throw new NotImplementedException();
+        return $"{_date.Now:yyyy.MM.dd}";
     }
 
     public string Number03()
     {
-        throw new NotImplementedException();
+        var date = _date.Now.ToString("dd");
+        var date2 = _date.Now.ToString("MMMM, yyyy");
+        var answer = $"Day {date} of {date2}";
+        return answer;
     }
 
     public string Number04()
     {
-        throw new NotImplementedException();
+        return $"Year: {_date.Now:yyyy}, Month: {_date.Now:MM}, Day: {_date.Now:dd}";
     }
 
     public string Number05()
     {
-        throw new NotImplementedException();
+        return $"{_date.Now,10:dddd}";
     }
 
     public string Number06()
     {
-        throw new NotImplementedException();
+        return $"{_date.Now,10:hh:mm tt}{_date.Now,10:dddd}";
     }
 
     public string Number07()
     {
-        throw new NotImplementedException();
+        return $"h:{_date.Now:hh}, m:{_date.Now:mm}, s:{_date.Now:ss}";
     }
 
     public string Number08()
     {
-        throw new NotImplementedException();
+        return $"{_date.Now:yyyy.MM.dd.hh.mm.ss}";
     }
 
     public string Number09()
     {
-        throw new NotImplementedException();
+        return $"{Math.PI:C}";
     }
 
     public string Number10()
     {
-        throw new NotImplementedException();
+        return $"{Math.PI,10:n3}";
     }
 
     public string Number11()
