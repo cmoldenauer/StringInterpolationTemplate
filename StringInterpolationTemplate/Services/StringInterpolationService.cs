@@ -76,7 +76,9 @@ public class StringInterpolationService : IStringInterpolationService
 
     public string Number11()
     {
-        throw new NotImplementedException();
+        int year = 2022;
+        var hexYear = $"{year:X2}";
+        return hexYear;
     }
 
     //2.2019.01.22
